@@ -10,4 +10,17 @@
         <textarea name="content" cols="30" rows="3" placeholder="Type Here..."></textarea>
         <input type="submit" value="Post">
     </form>
+
+    <ul>
+        <% for(posts of post) {%>
+            
+            <p>
+                <li><%= posts.content %></li>
+                <small>
+                    <%= posts.user.name %>
+                </small>
+            </p>
+            
+            <%} %>
+    </ul>
 </section>
